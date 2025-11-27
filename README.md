@@ -30,10 +30,16 @@ A powerful file renaming tool that uses Claude AI to intelligently analyze file 
 
 2. Install required packages:
    ```bash
-   pip install anthropic docx2txt PyPDF2 python-dotenv
+   pip install -r requirements.txt
    ```
 
-3. Run the application:
+3. (Optional) Set up your environment variables:
+   Create a `.env` file in the root directory and add your Anthropic API key:
+   ```
+   ANTHROPIC_API_KEY=your_api_key_here
+   ```
+
+4. Run the application:
    ```bash
    python claude_renamer_gui.py
    ```
